@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Форма</title>
   <base href="https://htmlacademy-adaptive.github.io/2173899-cat-energy-29/2/">
 </head>
 
@@ -58,94 +58,94 @@
         </h2>
         <form class="selection__form form-selection" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form-selection__group pet-information">
-            <legend class="pet-information__title">
+            <legend class="form-selection__title visually-hidden">
               Данные о питомце
             </legend>
-            <label class="pet-information__label">
+            <label class="form-selection__label">
               ИМЯ:*
-              <input class="pet-information__input" type="text" name="name" placeholder="барсик" required>
+              <input class="form-selection__input" type="text" name="name" placeholder="барсик" required>
             </label>
-            <label class="pet-information__label">
+            <label class="form-selection__label">
               Вес (кг):*
-              <input class="pet-information__input" type="text" name="name" placeholder="7" required>
+              <input class="form-selection__input" type="text" name="name" placeholder="7" required>
             </label>
-            <label class="pet-information__label">
+            <label class="form-selection__label">
               Возраст (лет):
-              <input class="pet-information__input" type="text" name="name" placeholder="7">
+              <input class="form-selection__input" type="text" name="name" placeholder="7">
             </label>
           </fieldset>
 
           <fieldset class="form-selection__group aim">
-            <legend class="aim__title">
+            <legend class="form-selection__title visually-hidden">
               Цель
             </legend>
-            <label class="aim__label">
-              <input class="aim__input" type="radio" name="aim" value="weight-loss" checked>
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox form-selection__checkbox--radio" type="radio" name="aim" value="weight-loss" checked>
               <span class="aim__text">похудение</span>
             </label>
-            <label class="aim__label">
-              <input class="aim__input" type="radio" name="aim" value="mass-gain">
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox form-selection__checkbox--radio" type="radio" name="aim" value="mass-gain">
               <span class="aim__text">Набор массы</span>
             </label>
-            <label class="aim__label">
-              <input class="aim__input" type="radio" name="aim" value="dont-know">
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox form-selection__checkbox--radio" type="radio" name="aim" value="dont-know">
               <span class="aim__text">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
 
           <fieldset class="form-selection__group owner-information">
-            <legend class="owner-information__title">
+            <legend class="form-selection__title">
               Контактные данные (владельца кота)
             </legend>
-            <label class="owner-information__label">
+            <label class="form-selection__label">
               E-mail:*
-              <input class="owner-information__input" type="email" name="email" placeholder="kuklachev@gmail.com"
+              <input class="form-selection__input" type="email" name="email" placeholder="kuklachev@gmail.com"
                 required>
             </label>
-            <label class="owner-information__label">
+            <label class="form-selection__label">
               Телефон:*
-              <input class="owner-information__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="form-selection__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
 
           <fieldset class="form-selection__group comments">
-            <legend class="comments__title">
+            <legend class="form-selection__title">
               Комментарий
             </legend>
-            <label class="comments__label visually-hidden">
+            <label class="form-selection__label visually-hidden">
               Коментарии о питомце
               <textarea class="comments__textarea" name="text" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </label>
           </fieldset>
 
           <fieldset class="form-selection__group extra">
-            <legend class="extra__title">
+            <legend class="form-selection__title">
               Дополнительно
             </legend>
-            <label class="extra__label">
-              <input class="extra__input" type="checkbox" name="sweetener" checked>
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox" type="checkbox" name="sweetener" checked>
               сахарозаменитель
             </label>
-            <label class="extra__label">
-              <input class="extra__input" type="checkbox" name="water">
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox" type="checkbox" name="water">
               питьевая вода
             </label>
-            <label class="extra__label">
-              <input class="extra__input" type="checkbox" name="milk">
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox" type="checkbox" name="milk">
               молоко
             </label>
-            <label class="extra__label">
-              <input class="extra__input" type="checkbox" name="vitamins">
+            <label class="form-selection__label">
+              <input class="form-selection__checkbox" type="checkbox" name="vitamins">
               витамины
             </label>
           </fieldset>
           <button class="form__button button" type="submit">
             отправить заявку
           </button>
+          <p class="form__text">
+            * — Обязательные поля
+          </p>
         </form>
-        <p class="form__text">
-          * — Обязательные поля
-        </p>
       </div>
     </section>
 
@@ -169,7 +169,9 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper wrapper">
-      <img src="img/footer-logo-text.svg" width="128" height="24" alt="логотип Кэт Энерджи в виде текста.">
+      <a class="main-footer__link">
+        <img src="img/logo-text.svg" width="128" height="24" alt="логотип Кэт Энерджи в виде текста.">
+      </a>
       <ul class="main-footer__list social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte">
@@ -187,14 +189,9 @@
           </a>
         </li>
       </ul>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип HTML Academy</span>
-        </a>
-      </div>
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
     </div>
   </footer>
 </body>
