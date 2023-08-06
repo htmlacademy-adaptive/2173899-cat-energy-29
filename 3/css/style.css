@@ -22,7 +22,6 @@
   font-display: swap;
 }
 .page__body {
-  width: 320px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -81,6 +80,7 @@ img {
   margin-bottom: 20px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-background.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: auto 302px;
   text-align: center;
 }
@@ -186,6 +186,7 @@ img {
 }
 .contact {
   padding-top: 26px;
+  text-align: center;
 }
 .contact.contact--basic-grey {
   background-color: #f2f2f2;
@@ -205,6 +206,7 @@ img {
 .contact__wrapper {
   display: flex;
   margin-bottom: 26px;
+  text-align: start;
 }
 .social {
   margin: 0;
@@ -273,9 +275,10 @@ img {
 .catalog__offer {
   padding: 187px 55px 43px;
   margin-bottom: 35px;
-  background-image: url("../img/offer-img.jpg");
+  background-image: url("../img/icon-gift.png"), url("../img/offer-img.jpg");
   background-repeat: no-repeat;
-  background-size: 280px 290px;
+  background-size: 78px 80px, 280px 290px;
+  background-position: top 59px center, top center;
   background-color: #000000;
   text-align: center;
 }
@@ -456,6 +459,7 @@ img {
   padding: 0;
   margin: 0;
   padding-bottom: 24px;
+  border: none;
 }
 .selection {
   padding-bottom: 32px;
@@ -475,5 +479,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   border: none;
+  resize: none;
+  outline: 1px solid #e7e7e7;
 }
 /*# sourceMappingURL=style.css.map */
