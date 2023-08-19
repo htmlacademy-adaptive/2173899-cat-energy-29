@@ -36,3 +36,82 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
+@media (min-width: @tablet-width) {
+  .promo {
+    padding-top: 65px;
+    margin-bottom: 0;
+    background-image: none;
+  }
+
+  .promo__title {
+    color: #000000;
+    line-height: 60px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    padding-left: 90px;
+    margin-bottom: 21px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__button {
+    width: 244px;
+    padding: 17px 15px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 526px;
+    left: 90px;
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
+  }
+
+  .promo__wrapper {
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    padding: 0 0 52px 80px;
+    margin-bottom: 230px;
+  }
+
+  .promo__title {
+    padding-left: 0;
+    width: 416px;
+  }
+
+  .promo__slogan {
+    padding-left: 0;
+    margin-bottom: 52px;
+  }
+
+  .promo__img {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: -81px;
+    left: 447px;
+  }
+
+  .promo {
+    padding-top: 110px;
+  }
+
+  .promo__button {
+    left: 80px;
+    bottom: 0;
+  }
+}

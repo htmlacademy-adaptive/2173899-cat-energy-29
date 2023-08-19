@@ -5,11 +5,14 @@
 }
 
 .additionally-list__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 13px;
   padding-bottom: 19px;
 }
 
 .additionally-list__title {
+  grid-column: 1/-1;
   margin: 0;
   margin-bottom: 13px;
   color: #222222;
@@ -25,9 +28,73 @@
 }
 
 .additionally-list__price {
+  text-align: right;
   line-height: 14px;
 }
 
 .additionally-list__button {
+  grid-column: 1/-1;
   margin-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__title {
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .additionally-list__item {
+    display: grid;
+    grid-template-columns: 163px 244px 132px 49px 42px;
+    row-gap: 25px;
+    padding: 26px 38px 28px;
+  }
+
+  .additionally-list__title {
+    grid-column: 1/2;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .additionally-list__amount {
+    grid-column: 3/4;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .additionally-list__price {
+    grid-column: 5/6;
+    line-height: 20px;
+  }
+
+  .additionally-list__button {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally-list__item {
+    grid-template-columns: 325px 243px 82px  244px;
+  }
+
+  .additionally-list__title {
+    grid-column: 1/2;
+  }
+
+  .additionally-list__amount {
+    grid-column: 2/3;
+    text-align: left;
+  }
+
+  .additionally-list__price {
+    grid-column: 3/4;
+    text-align: left;
+  }
+
+  .additionally-list__button {
+    grid-column: 4/5;
+  }
 }

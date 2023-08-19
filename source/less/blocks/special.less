@@ -1,5 +1,5 @@
 .special {
-  margin-bottom: 49px;
+  padding-bottom: 49px;
 }
 
 .special__list {
@@ -12,7 +12,108 @@
   margin-top: 26px;
 }
 
+.special__item {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.special__item::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.special__item--keep::before {
+  background-image: url("../img/icon-keep.svg");
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+}
+
+.special__item--kind::before {
+  background-image: url("../img/icon-kind.svg");
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+}
+
+.special__item--change::before {
+  background-image: url("../img/icon-eat.svg");
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+}
+
+.special__item--duration::before {
+  background-image: url("../img/icon-duration.svg");
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+}
+
 .special__title {
   margin: 0;
   margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .special__wrapper {
+    padding-top: 45px;
+  }
+
+  .special__title {
+    margin-bottom: 32px;
+  }
+
+  .special__list {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    gap: 37px 137px;
+    counter-reset: section;
+  }
+
+  .special {
+    padding-bottom: 47px;
+  }
+
+  .special__item + .special__item {
+    margin-top: 0;
+  }
+
+  .special__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 31px;
+    padding: 40px 0 57px;
+
+    &::after {
+      position: absolute;
+      left: 118px;
+      top: 0;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      counter-increment: section;
+      content: counter(section);
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special__wrapper {
+    padding-top: 0;
+  }
+
+  .special {
+    padding-bottom: 69px;
+  }
+
+  .special__list {
+    grid-template-columns: 230px 246px 248px 250px;
+    gap: 81px;
+  }
 }
