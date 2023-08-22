@@ -19,3 +19,123 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.example__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    margin-bottom: 60px;
+    grid-column: 1/-1;
+  }
+
+  .example {
+    padding-top: 45px;
+    padding-bottom: 101px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 57%, #eaeaea 57%, #eaeaea 100%);
+  }
+
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 367px 1fr;
+    align-items: center;
+  }
+
+  .example__description {
+    margin-bottom: 55px;
+    grid-column: 1/-1;
+  }
+
+  .example__wrap {
+    width: 367px;
+    margin: 0;
+  }
+
+  .example__img {
+    width: 560px;
+    height: 512px;
+    display: block;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    margin-top: 99px;
+  }
+
+  .example__text {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .example__price {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .example__inner {
+    width: 162px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    padding-top: 0;
+    padding-bottom: 75px;
+    background-image: linear-gradient(to top, #eaeaea, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
+  }
+
+  .example__wrapper {
+    grid-template-columns: 433px 1fr;
+    position: relative;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+    grid-column: 1/2;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+    grid-column: 1/2;
+  }
+
+  .example__wrap {
+    grid-column: 1/2;
+    margin-bottom: 55px;
+  }
+
+  .example__text {
+    grid-column: 1/2;
+    text-align: start;
+  }
+
+  .example__price {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 63px;
+  }
+
+  .example__img {
+    margin-top: 0;
+    grid-column: 2/3;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

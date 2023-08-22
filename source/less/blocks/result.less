@@ -1,4 +1,9 @@
+.result {
+  padding: 15px 15px 0;
+}
+
 .result__number {
+  margin-bottom: 8px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -8,4 +13,17 @@
 .result__description {
   font-size: 12px;
   line-height: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .result__number {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  .result__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

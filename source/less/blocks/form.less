@@ -22,15 +22,7 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 21px;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
-  border: none;
-  cursor: pointer;
+  margin-top: 10px;
 }
 
 .form__text {
@@ -38,4 +30,60 @@
   color: #000000;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding-top: 0;
+  }
+
+  .form__title {
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .form__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  .form__wrapper {
+    padding: 65px 40px 60px;
+  }
+
+  .form__button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 14px;
+    width: 282px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form__text {
+    display: inline-block;
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    padding: 74px 0 80px;
+  }
+
+  .form__title {
+    margin-bottom: 55px;
+  }
+
+  .form__button {
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .form__text {
+    margin-left: 0;
+    text-align: left;
+    padding: 19px 0 19px;
+  }
 }
