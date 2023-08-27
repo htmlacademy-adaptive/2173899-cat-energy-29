@@ -21,6 +21,18 @@
   height: 24px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
+  &--active {
+    background-image: url("../img/toggle-open.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--noactive {
+    background-image: url("../img/logo-mobile-button.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {

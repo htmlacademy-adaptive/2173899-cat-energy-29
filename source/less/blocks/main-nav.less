@@ -1,12 +1,24 @@
 .main-nav {
   display: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: contents;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .main-nav__wrapper {
   width: 100%;
   position: absolute;
   transform: translate(-50%, 50%);
-  top: -50%;
+  top: -49%;
   left: 50%;
 }
 
@@ -20,13 +32,9 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.main-nav__item:first-child {
-  border-top: 1px solid #e6e6e6;
-}
-
 .main-nav__link {
   display: block;
-  padding: 22px 50px 24px;
+  padding: 22px 50px 23px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
