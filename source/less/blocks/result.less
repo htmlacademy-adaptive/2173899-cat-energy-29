@@ -11,11 +11,20 @@
 }
 
 .result__description {
+  padding: 0 5px;
   font-size: 12px;
   line-height: 12px;
+  max-width: 77px;
+  margin-bottom: -17px;
+  z-index: 2;
+  background-color: #eaeaea;
 }
 
 @media (min-width: @tablet-width) {
+  .result {
+    padding: 15px 12px 0;
+  }
+
   .result__number {
     font-size: 30px;
     line-height: 37px;
@@ -25,5 +34,14 @@
   .result__description {
     font-size: 14px;
     line-height: 14px;
+    max-width: 135px;
+    margin-bottom: -6px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .result__description {
+    background-color: #f2f2f2;
   }
 }

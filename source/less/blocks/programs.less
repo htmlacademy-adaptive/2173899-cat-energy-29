@@ -1,5 +1,40 @@
 .programs__section {
+  position: relative;
   margin-bottom: 20px;
+
+  &--slim::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    top: 21px;
+    left: 27px;
+    width: 36px;
+    height: 50px;
+  }
+
+  &--pro::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+  }
+}
+
+.programs__section::before {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
 }
 
 @media (min-width: @tablet-width) {
@@ -10,6 +45,49 @@
   .programs__section:last-child {
     margin-bottom: 0;
   }
+
+  .programs__section {
+    position: relative;
+
+    &--slim::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: 140px 196px;
+      top: 81px;
+      right: 93px;
+      left: auto;
+      width: 140px;
+      height: 194px;
+    }
+
+    &--pro::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: 268px 112px;
+      top: 135px;
+      right: 28px;
+      left: auto;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .programs__section::before {
+    position: absolute;
+    top: 92px;
+    right: 63px;
+    left: auto;
+    display: block;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -17,11 +95,32 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 71px;
+    margin-top: 82px;
   }
 
   .programs__section {
     position: relative;
     width: 570px;
+
+    &--slim::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: 70px 97px;
+      top: 41px;
+      left: 67px;
+    }
+
+    &--pro::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: 134px 56px;
+      top: 67px;
+      left: 33px;
+    }
   }
 
   .programs__section:not(:last-child) {
@@ -30,7 +129,7 @@
 
   .programs__section::before {
     position: absolute;
-    top: 36px;
+    top: 47px;
     left: 52px;
     display: block;
     content: "";
