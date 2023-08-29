@@ -10,6 +10,10 @@
   text-transform: uppercase;
   position: relative;
 
+  &:hover input:not(:disabled) ~ .form-selection__mark {
+    outline-color: #bababa;
+  }
+
   &--checkbox {
     padding-left: 45px;
   }
@@ -54,10 +58,23 @@
     background-repeat: no-repeat;
     background-position: right 12px center;
   }
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .form-selection__title {
   position: relative;
+  padding: 0;
   margin-bottom: 35px;
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -129,6 +146,11 @@
   height: 13px;
   background-color: #68b738;
   border-radius: 50%;
+}
+
+.form-selection__checkbox:disabled ~ .form-selection__mark,
+.form-selection__checkbox:disabled ~ .form-selection__label-title {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

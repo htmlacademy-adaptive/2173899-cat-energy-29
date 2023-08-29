@@ -14,12 +14,33 @@
   }
 }
 
+.main-nav__toggle {
+  background-image: url("../img/logo-mobile-button.svg");
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--active {
+    background-image: url("../img/toggle-open.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--noactive {
+    background-image: url("../img/logo-mobile-button.svg");
+  }
+}
+
 .main-nav__wrapper {
   width: 100%;
   position: absolute;
   transform: translate(-50%, 50%);
   top: -49%;
   left: 50%;
+  z-index: 2;
 }
 
 .main-nav__list {
@@ -82,6 +103,14 @@
       text-decoration-thickness: 2px;
       text-underline-offset: 8px;
       text-underline-position: under;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

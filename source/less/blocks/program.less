@@ -38,10 +38,21 @@
     content: "";
     background-image: url("../img/icon-arrow.svg");
     width: 32px;
-    height: 10px;
+    height: 12px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon-arrow-hover.svg");
+      height: 12px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
