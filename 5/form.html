@@ -68,15 +68,15 @@
               </legend>
               <label class="form-selection__label">
                 ИМЯ:*
-                <input class="form-selection__input" type="text" name="name" placeholder="барсик" required>
+                <input class="form-selection__input" type="text" name="name" value="барсик" required>
               </label>
               <label class="form-selection__label">
                 Вес (кг):*
-                <input class="form-selection__input" type="text" name="weight" placeholder="7" required>
+                <input class="form-selection__input" type="number" name="weight" value="7" min="1" max="99" required>
               </label>
               <label class="form-selection__label">
                 Возраст (лет):
-                <input class="form-selection__input" type="text" name="name" placeholder="7">
+                <input class="form-selection__input" type="number" name="name" value="7" min="1" max="99">
               </label>
             </fieldset>
 
@@ -112,15 +112,15 @@
 
             <fieldset class="form-selection__group owner-information">
               <legend class="form-selection__title form-selection__title--owner">
-                Контактные данные (владельца кота)
+                Контактные данные<br> (владельца кота)
               </legend>
               <label class="form-selection__label">
                 E-mail:*
-                <input class="form-selection__input form-selection__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="form-selection__input form-selection__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
               </label>
               <label class="form-selection__label form-selection__label--desktop">
                 Телефон:*
-                <input class="form-selection__input form-selection__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="form-selection__input form-selection__input--tel" type="tel" name="tel" value="8 (960) 900-60-90" required>
               </label>
             </fieldset>
 
