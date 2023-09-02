@@ -1,6 +1,18 @@
 .all-products {
+  position: relative;
   padding-top: 78px;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .all-products__title {
@@ -33,13 +45,27 @@
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .all-products {
-    padding: 182px 37px 40px;
+    padding: 160px 37px 40px;
     background-color: #ffffff;
     background-image: none;
+    outline: 2px solid #f2f2f2;
+
+    &::before {
+      top: 50px;
+    }
   }
 
   .all-products__title {

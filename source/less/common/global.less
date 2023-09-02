@@ -78,6 +78,15 @@ img {
   background-color: #68b738;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -99,5 +108,9 @@ img {
 @media (min-width: @desktop-width) {
   .wrapper {
     width: 1220px;
+  }
+
+  .page__body {
+    position: relative;
   }
 }

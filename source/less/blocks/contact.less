@@ -7,7 +7,14 @@
   }
 }
 
+.contact iframe {
+  display: block;
+  border: none;
+  height: 362px;
+}
+
 .contact__slogan {
+  width: 50%;
   margin: 0;
   color: #111111;
   font-family: "Oswald", sans-serif;
@@ -17,6 +24,7 @@
 }
 
 .contact__address {
+  width: 50%;
   font-style: normal;
   line-height: 20px;
 }
@@ -27,7 +35,21 @@
   text-align: start;
 }
 
+.contact__img {
+  width: 100%;
+  height: 362px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
 @media (min-width: @tablet-width) {
+  .contact iframe {
+    display: block;
+    border: none;
+    height: 400px;
+  }
+
   .contact__wrapper {
     padding: 60px 40px;
     margin-bottom: 0;
@@ -46,7 +68,7 @@
   }
 
   .contact__img {
-    width: 768px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
   }
@@ -73,7 +95,7 @@
     background-color: #ffffff;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
   }
 
   .contact__address {

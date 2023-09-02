@@ -1,12 +1,10 @@
-.aim {
+.pet-information {
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 45px;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 26px;
+    bottom: 0;
     height: 1px;
     width: 100vw;
     background-color: #d9d9d9;
@@ -15,7 +13,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 26px;
+    bottom: 0;
     height: 1px;
     width: 100vw;
     left: -100vw;
@@ -24,10 +22,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .aim {
-    padding: 23px 27px 27px;
-    outline: 1px solid #e7e7e7;
-
+  .pet-information {
     &::before {
       display: none;
     }
@@ -35,11 +30,5 @@
     &::after {
       display: none;
     }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .aim {
-    padding: 25px 28px;
   }
 }
