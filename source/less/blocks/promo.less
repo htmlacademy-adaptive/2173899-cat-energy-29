@@ -9,6 +9,14 @@
   background-position: top center;
   background-size: auto 302px;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+  rgba(104, 183, 56, 0.85)),
+      url("../img/promo-background@2x.jpg"),
+      linear-gradient(#4c4a4f, #4c4a4f);
+    background-size: auto 302px;
+  }
 }
 
 .promo__title {
@@ -118,14 +126,23 @@
       content: "";
       background-image: linear-gradient(rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)),
-        url("../img/promo-background.jpg"),
+        url("../img/promo-background-desktop.jpg"),
         linear-gradient(#4c4a4f, #4c4a4f);
       background-size: cover;
+      background-color: #000000;
       top: 0;
       right: 0;
       width: 50%;
       height: 100%;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+          url("../img/promo-background-desktop@2x.jpg"),
+          linear-gradient(#4c4a4f, #4c4a4f);
+        background-size: cover;
+      }
     }
   }
 

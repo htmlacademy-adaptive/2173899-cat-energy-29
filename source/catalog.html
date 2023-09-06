@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-152x152.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
 </head>
@@ -12,7 +15,11 @@
   <header class="main-header">
     <div class="main-header__wrapper wrapper">
       <a class="main-header__logo" href="#">
-        <img class="" src="img/logo.svg" width="33" height="38" alt="логотип Кэт Энерджи.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="50">
+          <img class="logo-img" src="img/logo.svg" width="33" height="38" alt="логотип Кэт Энерджи.">
+        </picture>
         <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="логотип Кэт Энерджи в виде текста.">
       </a>
 
@@ -58,8 +65,13 @@
         <ul class="products__list products-list">
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--small" src="img/catalog-1.png" width="68" height="86"
-                alt="упаковка с едой со вкусом курицы 500 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png 1x, img/catalog-1-desktop@2x.png 2x" width="161" height="172">
+                <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, img/catalog-1-tablet@2x.png 2x" width="161" height="172">
+                <img class="product__img product__img--small" src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" width="68"
+                  height="86" alt="упаковка с едой со вкусом курицы 500 грамм.">
+              </picture>
+
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -76,8 +88,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img  product__img--big" src="img/catalog-2.png" width="84" height="100"
-                alt="упаковка с едой со вкусом курицы 1000 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-2-desktop.png 1x, img/catalog-2-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png 1x, img/catalog-2-tablet@2x.png 2x" width="168" height="206">
+                <img class="product__img  product__img--big" src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x" width="84"
+                  height="100" alt="упаковка с едой со вкусом курицы 1000 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -94,8 +110,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--small" src="img/catalog-3.png" width="68" height="78"
-                alt="упаковка с едой со вкусом рыбы 500 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-3-desktop.png 1x, img/catalog-3-desktop@2x.png 2x" width="163" height="174">
+                <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png 1x, img/catalog-3-tablet@2x.png 2x" width="163" height="174">
+                <img class="product__img product__img--small" src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x" width="68"
+                  height="78" alt="упаковка с едой со вкусом рыбы 500 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -112,8 +132,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--big" src="img/catalog-4.png" width="84" height="100"
-                alt="упаковка с едой со вкусом рыбы 1000 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-4-desktop.png 1x, img/catalog-4-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png 1x, img/catalog-4-tablet@2x.png 2x" width="168" height="200">
+                <img class="product__img product__img--big" src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x" width="84"
+                  height="100" alt="упаковка с едой со вкусом рыбы 1000 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -130,8 +154,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--small" src="img/catalog-5.png" width="68" height="78"
-                alt="упаковка с едой со вкусом гречки 500 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-5-desktop.png 1x, img/catalog-5-desktop@2x.png 2x" width="161" height="171">
+                <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png 1x, img/catalog-5-tablet@2x.png 2x" width="161" height="171">
+                <img class="product__img product__img--small" src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x" width="68"
+                  height="78" alt="упаковка с едой со вкусом гречки 500 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -148,8 +176,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--big" src="img/catalog-6.png" width="84" height="100"
-                alt="упаковка с едой со вкусом гречки 1000 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop.png 1x, img/catalog-6-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png 1x, img/catalog-6-tablet@2x.png 2x" width="168" height="200">
+                <img class="product__img product__img--big" src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x" width="84"
+                  height="100" alt="упаковка с едой со вкусом гречки 1000 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
@@ -166,8 +198,12 @@
           </li>
           <li class="products-list__item product">
             <div class="product__wrapper-img">
-              <img class="product__img product__img--small" src="img/catalog-7.png" width="72" height="84"
-                alt="упаковка с едой со вкусом риса 500 грамм.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-7-desktop.png 1x, img/catalog-7-desktop@2x.png 2x" width="163" height="174">
+                <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png 1x, img/catalog-7-tablet@2x.png 2x" width="163" height="174">
+                <img class="product__img product__img--small" src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" width="72"
+                  height="84" alt="упаковка с едой со вкусом риса 500 грамм.">
+              </picture>
             </div>
             <div class="product__inner">
               <h3 class="product__title">
