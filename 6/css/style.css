@@ -532,6 +532,9 @@ img {
     width: 367px;
     margin: 0;
   }
+  picture {
+    grid-column: 1/-1;
+  }
   .example__img {
     display: block;
     margin: 0 auto;
@@ -1831,6 +1834,7 @@ img {
   content: "";
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
+  background-size: 67px 28px;
   top: 35px;
   left: 13px;
   width: 67px;
@@ -1860,8 +1864,6 @@ img {
   .programs__section--slim::after {
     position: absolute;
     content: "";
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
     background-size: 140px 196px;
     top: 81px;
     right: 93px;
@@ -1872,8 +1874,6 @@ img {
   .programs__section--pro::after {
     position: absolute;
     content: "";
-    background-image: url("../img/cat-pro.svg");
-    background-repeat: no-repeat;
     background-size: 268px 112px;
     top: 135px;
     right: 28px;
@@ -1908,8 +1908,6 @@ img {
   .programs__section--slim::after {
     position: absolute;
     content: "";
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
     background-size: 70px 97px;
     top: 41px;
     left: 67px;
@@ -1917,8 +1915,6 @@ img {
   .programs__section--pro::after {
     position: absolute;
     content: "";
-    background-image: url("../img/cat-pro.svg");
-    background-repeat: no-repeat;
     background-size: 134px 56px;
     top: 67px;
     left: 33px;
