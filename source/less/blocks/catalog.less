@@ -29,6 +29,11 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-img@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .catalog__description {
@@ -50,6 +55,7 @@
 
   .catalog__offer {
     margin-bottom: 75px;
+    background-image: url("../img/offer-img-tablet.jpg");
     background-size: cover;
     background-position: center;
     padding: 71px 125px 69px 421px;
@@ -59,6 +65,11 @@
       left: 77px;
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offer-img-tablet@2x.jpg");
+      background-size: cover;
     }
   }
 }
@@ -80,6 +91,7 @@
     margin-top: auto;
     text-align: center;
     padding: 185px 42px 43px;
+    background-image: url("../img/offer-img-desktop.jpg");
     background-size: cover;
     background-position: top center;
 
@@ -87,6 +99,11 @@
       top: 56px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offer-img-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
