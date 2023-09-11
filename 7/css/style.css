@@ -55,6 +55,12 @@
   .main-header__logo {
     gap: 14px;
   }
+  .main-header__logo:hover {
+    opacity: 0.8;
+  }
+  .main-header__logo:active {
+    opacity: 0.6;
+  }
 }
 @font-face {
   font-family: "Lato";
@@ -735,20 +741,11 @@ img {
 .social__icon-vkontakte {
   fill: #666666;
 }
-.social__icon-vkontakte:hover {
-  fill: #68b738;
-}
 .social__icon-youtube {
   fill: #666666;
 }
-.social__icon-youtube:hover {
-  fill: #68b738;
-}
 .social__icon-telegram {
   fill: #666666;
-}
-.social__icon-telegram:hover {
-  fill: #68b738;
 }
 .social__link {
   display: block;
@@ -756,6 +753,33 @@ img {
 }
 .social__link:active {
   opacity: 0.3;
+}
+.social__link--vkontakte {
+  -webkit-mask-image: url("../img/sprite.svg#icon-vkontakte");
+          mask-image: url("../img/sprite.svg#icon-vkontakte");
+  background-color: #666666;
+}
+.social__link--vkontakte:focus,
+.social__link--vkontakte:hover {
+  background-color: #68b738;
+}
+.social__link--youtube {
+  -webkit-mask-image: url("../img/sprite.svg#icon-youtube");
+          mask-image: url("../img/sprite.svg#icon-youtube");
+  background-color: #666666;
+}
+.social__link--youtube:focus,
+.social__link--youtube:hover {
+  background-color: #68b738;
+}
+.social__link--telegram {
+  -webkit-mask-image: url("../img/sprite.svg#icon-telegram");
+          mask-image: url("../img/sprite.svg#icon-telegram");
+  background-color: #666666;
+}
+.social__link--telegram:focus,
+.social__link--telegram:hover {
+  background-color: #68b738;
 }
 .main-footer {
   padding-top: 40px;
@@ -777,18 +801,20 @@ img {
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 }
+.main-footer__link:focus svg,
+.main-footer__link:hover svg {
+  fill: #3e3e3e;
+}
+.main-footer__link:active svg {
+  fill: #6b6b6b;
+}
 .main-footer__logo-text {
   display: block;
   margin: 0 auto;
   fill: #111111;
 }
-.main-footer__logo-text:hover {
-  fill: #3e3e3e;
-}
-.main-footer__logo-text:active {
-  fill: #6b6b6b;
-}
 .main-footer__copyright {
+  position: relative;
   display: block;
   margin-top: 20px;
   padding: 7px 40px 7px 0;
@@ -796,13 +822,27 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #444444;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: right;
   text-decoration: none;
+}
+.main-footer__copyright:focus::after,
+.main-footer__copyright:hover::after {
+  background-color: #68b738;
 }
 .main-footer__copyright:active {
   opacity: 0.3;
+}
+.main-footer__copyright::after {
+  position: absolute;
+  content: "";
+  -webkit-mask-image: url("../img/sprite.svg#logo-htmlacademy");
+          mask-image: url("../img/sprite.svg#logo-htmlacademy");
+  background-color: #666666;
+  -webkit-mask-position: center;
+          mask-position: center;
+  width: 27px;
+  height: 34px;
+  right: 0;
+  top: 0;
 }
 @media (min-width: 768px) {
   .main-footer {
@@ -1581,6 +1621,36 @@ img {
 .form-selection__label--checkbox {
   padding-left: 45px;
 }
+.form-selection__label--email {
+  position: relative;
+}
+.form-selection__label--email::after {
+  position: absolute;
+  content: "";
+  -webkit-mask-image: url("../img/sprite.svg#icon-email");
+          mask-image: url("../img/sprite.svg#icon-email");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  right: 13px;
+}
+.form-selection__label--phone {
+  position: relative;
+}
+.form-selection__label--phone::after {
+  position: absolute;
+  content: "";
+  -webkit-mask-image: url("../img/sprite.svg#icon-phone");
+          mask-image: url("../img/sprite.svg#icon-phone");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  right: 13px;
+}
 .form-selection__mark {
   position: absolute;
   top: 50%;
@@ -1606,16 +1676,6 @@ img {
   text-transform: uppercase;
   border: none;
   outline: 1px solid #e7e7e7;
-}
-.form-selection__input--email {
-  background-image: url("../img/icon-email.svg");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-}
-.form-selection__input--tel {
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
 }
 .form-selection__input:hover {
   outline-color: #cdcdcd;
