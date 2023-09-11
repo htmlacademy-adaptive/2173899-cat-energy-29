@@ -11,26 +11,14 @@
 
 .social__icon-vkontakte {
   fill: #666666;
-
-  &:hover {
-    fill: #68b738;
-  }
 }
 
 .social__icon-youtube {
   fill: #666666;
-
-  &:hover {
-    fill: #68b738;
-  }
 }
 
 .social__icon-telegram {
   fill: #666666;
-
-  &:hover {
-    fill: #68b738;
-  }
 }
 
 .social__link {
@@ -39,5 +27,35 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--vkontakte {
+    mask-image: url("../img/sprite.svg#icon-vkontakte");
+    background-color: #666666;
+
+    &:focus,
+    &:hover {
+      background-color: #68b738;
+    }
+  }
+
+  &--youtube {
+    mask-image: url("../img/sprite.svg#icon-youtube");
+    background-color: #666666;
+
+    &:focus,
+    &:hover {
+      background-color: #68b738;
+    }
+  }
+
+  &--telegram {
+    mask-image: url("../img/sprite.svg#icon-telegram");
+    background-color: #666666;
+
+    &:focus,
+    &:hover {
+      background-color: #68b738;
+    }
   }
 }
