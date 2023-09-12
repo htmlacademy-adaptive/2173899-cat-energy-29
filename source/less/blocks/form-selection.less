@@ -20,17 +20,6 @@
 
   &--email {
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      mask-image: url("../img/sprite.svg#icon-email");
-      mask-repeat: no-repeat;
-      background-color: #000000;
-      width: 20px;
-      height: 20px;
-      right: 13px;
-    }
   }
 
   &--phone {
@@ -85,8 +74,25 @@
     outline: 2px solid #444444;
   }
 
+  &:focus + svg {
+    stroke: #68b738;
+  }
+
   &:invalid {
     outline: 2px solid #ff8282;
+  }
+
+  &:invalid + svg {
+    stroke: #ff8282;
+  }
+
+  &--email-svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: #000000;
+    fill: none;
   }
 }
 
