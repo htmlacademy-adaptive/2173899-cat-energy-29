@@ -17,6 +17,14 @@
   &--checkbox {
     padding-left: 45px;
   }
+
+  &--email {
+    position: relative;
+  }
+
+  &--phone {
+    position: relative;
+  }
 }
 
 .form-selection__mark {
@@ -47,18 +55,6 @@
   border: none;
   outline: 1px solid #e7e7e7;
 
-  &--email {
-    background-image: url("../img/icon-email.svg");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-  }
-
-  &--tel {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-  }
-
   &:hover {
     outline-color: #cdcdcd;
   }
@@ -67,8 +63,34 @@
     outline: 2px solid #444444;
   }
 
+  &:focus + svg {
+    stroke: #68b738;
+  }
+
   &:invalid {
     outline: 2px solid #ff8282;
+  }
+
+  &:invalid + svg {
+    stroke: #ff8282;
+  }
+
+  &--email-svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: #000000;
+    fill: none;
+  }
+
+  &--phone-svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: #000000;
+    fill: none;
   }
 }
 

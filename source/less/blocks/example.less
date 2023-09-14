@@ -44,6 +44,85 @@
   border-radius: 3px;
 }
 
+.example__wrapper {
+  position: relative;
+}
+
+.example__range-bar {
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: #666666;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+}
+
+.example__range-toggle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-left: 10px solid #666666;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-right: 10px solid #666666;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    border-color: #68b738;
+
+    &::after {
+      border-right-color: #68b738;
+    }
+
+    &::before {
+      border-left-color: #68b738;
+    }
+  }
+
+  &:active {
+    border-color: #5eaa2f;
+
+    &::after {
+      border-right-color: #5eaa2f;
+    }
+
+    &::before {
+      border-left-color: #5eaa2f;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .example__title {
     margin-bottom: 60px;
@@ -99,6 +178,10 @@
   .example__inner {
     width: 162px;
   }
+
+  .example__range-bar {
+    height: 512px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -145,5 +228,11 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  .example__range-bar {
+    right: 276px;
+    left: auto;
+    top: 0;
   }
 }
