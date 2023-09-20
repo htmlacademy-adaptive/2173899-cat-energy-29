@@ -16,6 +16,10 @@
 
   &--checkbox {
     padding-left: 45px;
+
+    &:focus-within input:not(:disabled) ~ .form-selection__mark {
+      outline-color: #bababa;
+    }
   }
 
   &--email {
@@ -92,6 +96,15 @@
     stroke: #000000;
     fill: none;
   }
+}
+
+.form-selection__input[type="number"]::-webkit-outer-spin-button,
+.form-selection__input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form-selection__input[type="number"] {
+  appearance: textfield;
 }
 
 .form-selection__title {
