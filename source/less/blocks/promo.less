@@ -1,6 +1,7 @@
 .promo {
   padding-top: 27px;
   margin-bottom: 20px;
+  background: linear-gradient(to bottom, #000000 302px, #ffffff 302px, #ffffff 100%);
   background-image: linear-gradient(rgba(104, 183, 56, 0.85),
   rgba(104, 183, 56, 0.85)),
     url("../img/promo-background.jpg"),
@@ -12,7 +13,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-  rgba(104, 183, 56, 0.85)),
+    rgba(104, 183, 56, 0.85)),
       url("../img/promo-background@2x.jpg"),
       linear-gradient(#4c4a4f, #4c4a4f);
     background-size: auto 302px;
@@ -38,7 +39,6 @@
 
 .promo__button {
   display: block;
-  margin-top: 3px;
   padding: 11px 20px;
   font-size: 14px;
   line-height: 18px;
@@ -54,6 +54,7 @@
   }
 
   .promo__title {
+    width: 510px;
     color: #000000;
     line-height: 60px;
     margin-bottom: 40px;
@@ -138,7 +139,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)),
+        rgba(104, 183, 56, 0.85)),
           url("../img/promo-background-desktop@2x.jpg"),
           linear-gradient(#4c4a4f, #4c4a4f);
         background-size: cover;
@@ -148,6 +149,6 @@
 
   .promo__button {
     left: 80px;
-    bottom: 0;
+    bottom: -2px;
   }
 }

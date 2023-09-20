@@ -1,11 +1,12 @@
 .main-header {
-  padding: 14px 20px;
+  padding: 13px 20px 14px;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .main-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -13,6 +14,10 @@
 .main-header__logo {
   display: flex;
   gap: 56px;
+
+  & picture {
+    display: flex;
+  }
 }
 
 .main-header__toggle {
@@ -32,6 +37,10 @@
 
   &--noactive {
     background-image: url("../img/sprite.svg#logo-mobile-button");
+  }
+
+  &--nojs {
+    display: none;
   }
 }
 
