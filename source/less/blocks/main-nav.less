@@ -38,7 +38,7 @@
   width: 100%;
   position: absolute;
   transform: translate(-50%, 50%);
-  top: -49%;
+  top: -35px;
   left: 50%;
   z-index: 2;
 }
@@ -51,6 +51,10 @@
 
 .main-nav__item {
   border-bottom: 1px solid #e6e6e6;
+
+  &--first {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .main-nav__link {
@@ -118,6 +122,10 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 476px;
+  }
+
+  .main-nav__list {
+    padding-top: 12px;
   }
 
   .main-nav__link {

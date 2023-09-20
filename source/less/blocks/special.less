@@ -9,7 +9,7 @@
 }
 
 .special__item + .special__item {
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .special__item {
@@ -17,38 +17,50 @@
   grid-template-columns: 60px auto;
   align-items: center;
   gap: 20px;
-}
 
-.special__item::before {
-  display: block;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-}
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
 
-.special__item--keep::before {
-  background-image: url("../img/icon-keep.svg");
-  background-repeat: no-repeat;
-  background-position: left 17px center;
-}
+  &--keep {
+    &::before {
+      background-image: url("../img/icon-keep.svg");
+      background-repeat: no-repeat;
+      background-position: left 17px center;
+    }
+  }
 
-.special__item--kind::before {
-  background-image: url("../img/icon-kind.svg");
-  background-repeat: no-repeat;
-  background-position: left 17px center;
-}
+  &--kind {
+    &::before {
+      background-image: url("../img/icon-kind.svg");
+      background-repeat: no-repeat;
+      background-position: left 17px center;
+    }
+  }
 
-.special__item--change::before {
-  background-image: url("../img/icon-eat.svg");
-  background-repeat: no-repeat;
-  background-position: left 17px center;
-}
+  &--change {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: left 17px center;
+    }
+  }
 
-.special__item--duration::before {
-  background-image: url("../img/icon-duration.svg");
-  background-repeat: no-repeat;
-  background-position: left 17px center;
+  &--duration {
+    &::before {
+      background-image: url("../img/icon-duration.svg");
+      background-repeat: no-repeat;
+      background-position: left 17px center;
+    }
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .special__title {
@@ -91,7 +103,7 @@
 
     &::after {
       position: absolute;
-      left: 118px;
+      left: 115px;
       top: 0;
       font-family: "Oswald", sans-serif;
       font-size: 280px;
@@ -100,6 +112,39 @@
       counter-increment: section;
       content: counter(section);
       z-index: -1;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--keep {
+      &::before {
+        background-position: center;
+      }
+    }
+
+    &--kind {
+      &::before {
+        background-position: center;
+      }
+    }
+
+    &--change {
+      &::before {
+        background-position: center;
+      }
+    }
+
+    &--duration {
+      &::before {
+        background-position: center;
+      }
+
+      & br {
+        display: block;
+      }
     }
   }
 }
@@ -115,7 +160,7 @@
   }
 
   .special__list {
-    grid-template-columns: 230px 246px 248px 250px;
-    gap: 81px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
