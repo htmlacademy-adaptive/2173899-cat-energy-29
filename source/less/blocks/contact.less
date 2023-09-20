@@ -59,11 +59,10 @@
     img {
       display: block;
       width: 100%;
-      height: auto;
       object-fit: cover;
     }
 
-    & iframe {
+    iframe {
       display: none;
     }
   }
@@ -91,18 +90,14 @@
     text-align: end;
   }
 
-  .contact__map-wrapper iframe {
-    display: block;
-    border: none;
-    height: 400px;
-    padding-top: 0;
-    width: 100%;
+  .contact__map-wrapper {
+    iframe {
+      height: 400px;
+    }
   }
 
-  .contact__img {
-    width: 100%;
+  .contact__map-img {
     height: 400px;
-    object-fit: cover;
   }
 
   .contact__address-city {

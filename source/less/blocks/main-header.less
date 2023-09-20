@@ -6,6 +6,7 @@
 
 .main-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -36,6 +37,10 @@
 
   &--noactive {
     background-image: url("../img/sprite.svg#logo-mobile-button");
+  }
+
+  &--nojs {
+    display: none;
   }
 }
 
