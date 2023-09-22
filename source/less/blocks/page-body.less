@@ -1,0 +1,25 @@
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0 auto;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+    position: relative;
+  }
+}
